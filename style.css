@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    width: 740px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    margin-top: 10px;
+
+}
+.memory-card{
+    width: 23%;
+    height: 28.33%;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: .5s;
+} 
+.front-face,.back-face{
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+    position: absolute;
+    background: rgb(33, 33, 33);
+    backface-visibility: hidden;
+}
+.front-face{
+    transform: rotateY(180deg);
+}
+
+.memory-card:active{
+    transform: scale(.97);
+    transition: .3s;
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+.btn{
+    text-decoration: none;
+    background: rgb(29, 29, 29);
+    padding: 1rem 0.6rem;
+    color: rgb(245, 74, 74);
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: none;
+}
+#score{
+    color: rgb(160, 159, 159);
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    align-self: baseline;
+    margin-left: 20px;
+}
+.modal{
+    position: fixed;
+    top: -10vh;
+    background: rgb(29, 29, 29);
+    color: rgb(53, 214, 53);
+    font-size: 1.2rem;
+    height: 10vh;
+    width: 40vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
