@@ -14,7 +14,7 @@
 
 
 ## 📸 Screenshots
-<img src="snap.png width='400' height='auto'>
+<img src="img/snap.png" width='400' height='auto'>
 
 
 link:https://jaydeep-shelake.github.io/MemoryCard.js/
