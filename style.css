@@ -21,12 +21,11 @@ section{
     align-items: center;
     justify-content: center;
     perspective: 1000px;
-    margin-top: 10px;
 
 }
 .memory-card{
     width: 23%;
-    height: 28.33%;
+    height: 31.33%;
     position: relative;
     margin: 5px;
     transform: scale(1);
@@ -85,4 +84,26 @@ section{
     align-items: center;
     border-radius: 10px;
     transition: all 0.5s ease;
+}
+@media (max-width:585px){
+    section{
+        width: 95%;
+        height: 75%;
+    }
+    .memory-card{
+        width: 29%;
+        height: 31.33%;
+    }
+    .btn{
+        margin-top: 20%;
+    }
+}
+@media (max-width:420px){
+  .memory-card{
+    width: 29%;
+    height: 22.33%;
+  }
+  .btn{
+      margin-top: 10%;
+  }
 }
